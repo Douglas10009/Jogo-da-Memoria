@@ -75,5 +75,5 @@ function main() {
 
 // TODO - 
 // Timer
-// Mudar o background
-// Colocar icones personalizados
+// 🆗 - Mudar o background
+// 🆗 - Colocar icones personalizados
