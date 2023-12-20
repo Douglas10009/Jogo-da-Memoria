@@ -1,33 +1,34 @@
 // Todos os emojis selecionados
-const emojis = [
-    "💴",
-    "💴",
-    "🤑",
-    "🤑",
-    "😶‍🌫️",
-    "😶‍🌫️",
-    "😭",
-    "😭",
-    "🥸",
-    "🥸",
-    "😾",
-    "😾",
-    "👩‍🌾",
-    "👩‍🌾",
-    "🕺",
-    "🕺",
+const aldeoes = [
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/8/88/Grandpa.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/8/88/Grandpa.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/3/37/Marlon.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/3/37/Marlon.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/2/2b/Lewis.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/2/2b/Lewis.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/5/52/Gus.png' style='width: 100px;'>",
+    "<img src='https://stardewvalleywiki.com/mediawiki/images/5/52/Gus.png' style='width: 100px;'>",
 ];
+
 // Emojis abertos
 let openCards = [];
 
 // Permite sortear baseado em uma função (Melhor forma de aleatorizar, 2 elemeentos com o mesmo valor e o pc que decide como vai organizar)
-let shuffleEmojis = emojis.sort(()=> (Math.random() > 0.5 ? 2 : -1));
+let shuffleAldeoes = aldeoes.sort(()=> (Math.random() > 0.5 ? 2 : -1));
 
 
-for (let i = 0; i < emojis.length; i++) {
+for (let i = 0; i < aldeoes.length; i++) {
     let box = document.createElement('div');
     box.className = 'item';
-    box.innerHTML = shuffleEmojis[i];
+    box.innerHTML = shuffleAldeoes[i];
 
     box.onclick = handleClick;
 
@@ -60,15 +61,19 @@ function checkMatch() {
 
 
     // Mostra mensagem de vitória
-    if (document.querySelectorAll('.boxMatch').length === emojis.length) {
+    if (document.querySelectorAll('.boxMatch').length === aldeoes.length) {
         alert('U win!')
     }
 }
 
-
+function main() {
+    const audio = new Audio('./src/audio/Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3');
+    audio.volume = 0.5;
+    audio.play
+}
 
 
 // TODO - 
 // Timer
-// Mudar o background
-// Colocar icones personalizados
+// 🆗 - Mudar o background
+// 🆗 - Colocar icones personalizados

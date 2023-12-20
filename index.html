@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jogo da memória</title>
+    <title>Jogo da memória</title>
+    <link rel="shortcut icon" href="./src/images/The_Player_Icon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./src/styles/styles.css">
     <link rel="stylesheet" href="./src/styles/reset.css">
@@ -16,8 +17,17 @@
         <h2 id="timer">00:00</h2>
         <div class="game"></div>
         <button class="reset" onclick="window.location.reload()">Reset</button>
+        <a href="newPage.html">clic</a>
+        <audio id='musica' src="src/audio/Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3" autoplay></audio>
     </div>
     <script src="./src/scripts/engine.js" defer></script>
+    <script>
+        let html = document.querySelector("html");
+        let musica = document.querySelector("#musica");
+        html.addEventListener('click', () => {
+            musica.play();
+        })
+    </script>
 </body>
 
 </html>
