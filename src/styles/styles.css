@@ -3,7 +3,11 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fc1e8a;
+    background-image: url('../images/st wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
     user-select: none;
 }
 
@@ -14,7 +18,8 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
+    background-image: url('../images/download.jpg');
+    /* opacity: 0.94; */
     padding: 40px 60px;
 }
 
@@ -54,6 +59,7 @@ h2{
     transform-style: preserve-3d;
     /* Pespequitiva de 500px */
     perspective: 500px;
+
 }
 
 
