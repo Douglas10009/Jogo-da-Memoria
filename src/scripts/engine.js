@@ -23,6 +23,7 @@ let openCards = [];
 // Permite sortear baseado em uma função (Melhor forma de aleatorizar, 2 elemeentos com o mesmo valor e o pc que decide como vai organizar)
 let shuffleEmojis = emojis.sort(()=> (Math.random() > 0.5 ? 2 : -1));
 
+
 for (let i = 0; i < emojis.length; i++) {
     let box = document.createElement('div');
     box.className = 'item';
@@ -57,11 +58,14 @@ function checkMatch() {
     }
     openCards = [];
 
+
     // Mostra mensagem de vitória
     if (document.querySelectorAll('.boxMatch').length === emojis.length) {
         alert('U win!')
     }
 }
+
+
 
 
 // TODO - 
