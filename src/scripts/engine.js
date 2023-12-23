@@ -69,9 +69,10 @@ function checkMatch() {
 function main() {
     const audio = new Audio('./src/audio/Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3');
     audio.volume = 0.5;
-    audio.play
+    audio.play();
 }
 
+main();
 
 // TODO - 
 // Timer
