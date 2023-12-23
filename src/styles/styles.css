@@ -19,13 +19,13 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-image: url('../images/download.jpg');
+    background-image: url('../images/Flooring_01.png');
     /* opacity: 0.94; */
     padding: 40px 60px;
 }
 
 h2{
-    font-size: 3em;
+    font-size: 2.4em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -97,4 +97,33 @@ h2{
 
 .boxOpen::after, .boxMatch::after{
     transform: rotateY(180deg);
+}
+
+.win, .fail{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #916b6b;
+    color: #fff;
+    width: 80dvw;
+    height: 80dvh;
+    z-index:2;
+    border-radius: 5%;
+}
+
+.win {
+    background-image: url('../images/Flooring_40.png');
+    color: #2ba0c1;
+}
+
+.fail{
+    background-image: url('../images/Flooring_29.png');
+    color: #000;
+}
+
+.hide{
+    display: none;
 }

@@ -13,12 +13,31 @@
 
 <body>
     <div class="conteiner">
+        <div class="win hide">
+            <h1>Parabéns!!!</h1>
+
+            <div class="img-happy"></div>
+
+            <p>Você ganhou!</p>
+
+            <button onclick="window.location.reload()">Tente novamente</button>
+        </div>
+
+        <div class="fail hide">
+            <h1>Não foi dessa vez farmer guy, tente de novo!</h1>
+
+            <div class="img-sad">
+
+            </div>
+            <p>Tá ruim de memória viu</p>
+            <button onclick="window.location.reload()">Tente novamente</button>
+        </div>
+
         <h2>Jogo da memória</h2>
-        <h2 id="timer">00:00</h2>
+        <h2 id="timer">0</h2>
         <div class="game"></div>
         <button class="reset" onclick="window.location.reload()">Reset</button>
-        <a href="newPage.html">clic</a>
-        <audio id='musica' src="src/audio/Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3" autoplay></audio>
+        <a href="newPage.html">click</a>
     </div>
     <script src="./src/scripts/engine.js" defer></script>
 </body>
