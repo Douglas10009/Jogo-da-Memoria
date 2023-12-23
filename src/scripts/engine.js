@@ -70,6 +70,7 @@ const playAudio = (file) => {
     const audio = new Audio(`../src/audio/${file}.mp3`);
     audio.play();
     audio.volume = 0.5;
+    audio.loop = true;
 
 }
 
