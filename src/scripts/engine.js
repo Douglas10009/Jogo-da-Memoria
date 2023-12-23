@@ -22,7 +22,7 @@ const aldeoes = [
 let openCards = [];
 
 // Permite sortear baseado em uma função (Melhor forma de aleatorizar, 2 elemeentos com o mesmo valor e o pc que decide como vai organizar)
-let shuffleAldeoes = aldeoes.sort(()=> (Math.random() > 0.5 ? 2 : -1));
+let shuffleAldeoes = aldeoes.sort(() => (Math.random() > 0.5 ? 2 : -1));
 
 
 for (let i = 0; i < aldeoes.length; i++) {
@@ -53,7 +53,7 @@ function checkMatch() {
     if (openCards[0].innerHTML === openCards[1].innerHTML) {
         openCards[0].classList.add('boxMatch');
         openCards[1].classList.add('boxMatch');
-    } else{
+    } else {
         openCards[0].classList.remove('boxOpen');
         openCards[1].classList.remove('boxOpen');
     }
@@ -66,15 +66,22 @@ function checkMatch() {
     }
 }
 
+const playAudio = (file) => {
+    const audio = new Audio(`./src/audio/${file}.mp3`);
+    // audio.play();
+    // audio.volume = 0.5;
+
+}
+
+
 function main() {
-    const audio = new Audio('./src/audio/Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3');
-    audio.volume = 0.5;
-    audio.play();
+    playAudio('Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3');
 }
 
 main();
 
-// TODO - 
+// TODO -
 // Timer
+// Fazer uma tela de vitória
 // 🆗 - Mudar o background
 // 🆗 - Colocar icones personalizados
