@@ -67,7 +67,7 @@ function checkMatch() {
 // Minhas adições
 
 const playAudio = (file) => {
-    const audio = new Audio(`./src/audio/${file}.mp3`);
+    const audio = new Audio(`../src/audio/${file}.mp3`);
     audio.play();
     audio.volume = 0.5;
 
@@ -83,7 +83,6 @@ const state = {
     telaPerda: document.querySelector('.fail'),
 }
 
-console.log(state.semanticTimer);
 
 const setTimer = () => {
     setInterval(() => {
@@ -159,7 +158,7 @@ const victoryFail = (victory) => {
 
 
 function main() {
-    playAudio('Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3');
+    playAudio('Stardew Valley_Winter');
     setTimer();
 }
 
