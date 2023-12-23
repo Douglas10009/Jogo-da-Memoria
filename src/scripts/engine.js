@@ -159,7 +159,7 @@ const victoryFail = (victory) => {
 
 
 function main() {
-    // playAudio('Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3');
+    playAudio('Stardew Valley - Winter (The Wind Can Be Still) - OST.mp3');
     setTimer();
 }
 
